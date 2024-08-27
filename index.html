@@ -19,12 +19,12 @@
           </div>
           <div class="toggle"><i class="fas fa-bars"></i></div>
           <ul class="links">
-            <li class="active">Home</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Pricing</li>
-            <li>Contact</li>
+            <li data-go="landing" class="active">Home</li>
+            <li data-go="service">Services</li>
+            <li data-go="portfolio">Portfolio</li>
+            <li data-go="about">About</li>
+            <li data-go="pricing">Pricing</li>
+            <li data-go="contact-us">Contact</li>
             <div class="search">
               <i class="fas fa-search"></i>
             </div>
@@ -138,7 +138,7 @@
     </section>
     <!-- end services -->
     <!-- start Portfolio -->
-    <div class="porttitor">
+    <div class="portfolio">
       <div class="section-title">
         <h3>Portfolio</h3>
         <p>
@@ -147,32 +147,32 @@
         </p>
       </div>
       <ul class="tabs">
-        <li data-img="all" class="active">All</li>
-        <li data-img="app">App</li>
-        <li data-img="Photo">Photo</li>
-        <li data-img="web">Web</li>
-        <li data-img="Print">Print</li>
+        <li data-img=".img-content" class="active">All</li>
+        <li data-img=".app">App</li>
+        <li data-img=".photo">Photo</li>
+        <li data-img=".web">Web</li>
+        <li data-img=".print">Print</li>
       </ul>
       <div class="images-container">
-        <div class="img-content">
+        <div class="img-content app">
           <div class="img">
             <img src="images/shuffle-01.jpg" alt="Random" />
           </div>
-          <div class="img-content">
+          <div class="img-content web">
             <p class="title">Awesome Image</p>
             <p class="type">Photography</p>
           </div>
         </div>
-        <div class="img-content">
+        <div class="img-content photo">
           <div class="img">
             <img src="images/shuffle-02.jpg" alt="Random" />
           </div>
-          <div class="img-content">
+          <div class="img-content photo">
             <p class="title">Awesome Image</p>
             <p class="type">Photography</p>
           </div>
         </div>
-        <div class="img-content">
+        <div class="img-content print">
           <div class="img">
             <img src="images/shuffle-03.jpg" alt="Random" />
           </div>
@@ -181,7 +181,7 @@
             <p class="type">Photography</p>
           </div>
         </div>
-        <div class="img-content">
+        <div class="img-content print">
           <div class="img">
             <img src="images/shuffle-04.jpg" alt="Random" />
           </div>
@@ -190,25 +190,25 @@
             <p class="type">Photography</p>
           </div>
         </div>
-        <div class="img-content">
+        <div class="img-content web">
           <div class="img">
             <img src="images/shuffle-05.jpg" alt="Random" />
           </div>
-          <div class="img-content">
+          <div class="img-content web">
             <p class="title">Awesome Image</p>
             <p class="type">Photography</p>
           </div>
         </div>
-        <div class="img-content">
+        <div class="img-content app">
           <div class="img">
             <img src="images/shuffle-06.jpg" alt="Random" />
           </div>
-          <div class="img-content">
+          <div class="img-content print">
             <p class="title">Awesome Image</p>
             <p class="type">Photography</p>
           </div>
         </div>
-        <div class="img-content">
+        <div class="img-content app">
           <div class="img">
             <img src="images/shuffle-07.jpg" alt="Random" />
           </div>
@@ -217,7 +217,7 @@
             <p class="type">Photography</p>
           </div>
         </div>
-        <div class="img-content">
+        <div class="img-content photo">
           <div class="img">
             <img src="images/shuffle-08.jpg" alt="Random" />
           </div>
@@ -265,22 +265,22 @@
       <div class="container">
         <div class="static">
           <i class="fas fa-mug-hot"></i>
-          <div class="number">1.232</div>
+          <div data-to="300" class="number">0</div>
           <p>Coffe Drinks</p>
         </div>
         <div class="static">
           <i class="far fa-folder"></i>
-          <div class="number">1.232</div>
+          <div data-to="99" class="number">0</div>
           <p>Completed Projects</p>
         </div>
         <div class="static">
           <i class="far fa-envelope"></i>
-          <div class="number">1.232</div>
+          <div data-to="200" class="number">0</div>
           <p>Mail Sent</p>
         </div>
         <div class="static">
           <i class="fas fa-trophy"></i>
-          <div class="number">1.232</div>
+          <div data-to="565" class="number">0</div>
           <p>Awards Received</p>
         </div>
       </div>
@@ -337,25 +337,25 @@
               <div class="skill-content">
                 <h3 class="title">ADOBE</h3>
                 <div class="progress-parent">
-                  <div class="progress-child child1" data="90%"></div>
+                  <div class="progress-child child1" data-width="90%"></div>
                 </div>
               </div>
               <div class="skill-content">
                 <h3 class="title">Html & Css</h3>
                 <div class="progress-parent">
-                  <div class="progress-child child2" data="85%"></div>
+                  <div class="progress-child child2" data-width="85%"></div>
                 </div>
               </div>
               <div class="skill-content">
                 <h3 class="title">Javascripts</h3>
                 <div class="progress-parent">
-                  <div class="progress-child child3" data="70%"></div>
+                  <div class="progress-child child3" data-width="70%"></div>
                 </div>
               </div>
               <div class="skill-content">
                 <h3 class="title">PHP</h3>
                 <div class="progress-parent child4">
-                  <div class="progress-child child4" data="90%"></div>
+                  <div class="progress-child child4" data-width="90%"></div>
                 </div>
               </div>
             </div>
@@ -450,7 +450,7 @@
     <!-- start form -->
     <div class="form">
       <div class="container">
-        <form>
+        <form id="email-form">
           <input type="email" name="email" placeholder="Your Email" />
           <button type="">Subscribe</button>
         </form>
@@ -472,11 +472,15 @@
       </div>
       <div class="container">
         <div class="contact-form">
-          <form action="">
+          <form id="main-form" action="">
             <div class="form-input">
-              <input type="text" placeholder="Your Name" name="" id="" />
-              <input type="email" placeholder="Your Email" name="" id="" />
-              <textarea placeholder="Your Message" id=""></textarea>
+              <input type="text" placeholder="Your Name" name="name" id="" />
+              <input type="email" placeholder="Your Email" name="email" id="" />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                id=""
+              ></textarea>
               <button>Send Message</button>
             </div>
             <div class="form-text">
@@ -501,7 +505,6 @@
     </div>
     <!-- End Contact-us -->
     <!-- start footer -->
-    <!-- end footer -->
     <footer>
       <div class="container">
         <div class="logo">
@@ -527,5 +530,6 @@
         </div>
       </div>
     </footer>
+    <!-- end footer -->
   </body>
 </html>

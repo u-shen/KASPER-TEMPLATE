@@ -137,7 +137,11 @@ body {
         position: absolute;
         bottom: -360px;
         z-index: 9999;
-        background: var(--mainColor);
+        background: linear-gradient(
+          40deg,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.7)
+        );
         width: 100%;
         margin: 0;
         left: 0;
@@ -318,6 +322,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   .img-content {
     position: relative;
+    overflow: hidden;
   }
   .img {
     overflow: hidden;
@@ -511,37 +516,16 @@ body {
       height: 100%;
       background-color: var(--secondColor);
       &::after {
-        content: attr(data);
+        content: attr(data-width);
         padding: 5px;
-        top: -45px;
-        left: calc(100% - 19px);
+        top: -43px;
+        left: calc(100% - 20px);
         font-weight: bold;
         background-color: #282828;
         color: white;
         border-radius: 4px;
         position: absolute;
       }
-      &::before {
-        content: "";
-        position: absolute;
-        left: 98%;
-        top: -35%;
-        border-width: 10px;
-        border-style: solid;
-        border-color: #282828 transparent transparent transparent;
-      }
-    }
-    .child1 {
-      width: 90%;
-    }
-    .child2 {
-      width: 85%;
-    }
-    .child3 {
-      width: 70%;
-    }
-    .child4 {
-      width: 90%;
     }
   }
 }
@@ -806,4 +790,15 @@ footer::after {
   background-color: rgb(0 0 0 /80%);
 }
 
+textarea.error::placeholder,
+input.error::placeholder {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+textarea.error,
+input.error,
+input.error + button {
+  border: 1px solid red;
+  position: relative;
+}
 /* end footer */
